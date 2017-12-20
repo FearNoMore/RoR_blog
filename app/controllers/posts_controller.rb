@@ -13,9 +13,9 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to @post
+      redirect_to @post, success: 'Статья успешно создана'
     else
-      # flash.now[:danger] = 'Не удалось создать статью'
+      flash.now[:danger] = 'Не удалось создать статью'
       render :new
     end
   end
@@ -23,15 +23,15 @@ class PostsController < ApplicationController
   end
   def update
     if @post.update_attributes(post_params)
-      redirect_to @post
+      redirect_to @post, success: 'Статья успешно отредактирована'
     else
-      # flash.now[:danger] = 'Не удалось отредактировать статью'
+      flash.now[:danger] = 'Не удалось отредактировать статью'
       render :edit
     end
   end
   def destroy
     @post.destroy
-    redirect_to posts_path
+    redirect_to posts_path, success: 'Статья успешно удалена'
   end
 
   private
