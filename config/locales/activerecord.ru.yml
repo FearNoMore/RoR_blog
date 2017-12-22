@@ -1,0 +1,14 @@
+ru:
+  activerecord:
+    models:
+      post: 'Статья'
+    attributes:
+      post:
+        title: 'Название'
+        description: 'Аннотация'
+        decription: 'Аннотация'
+        body: 'Содержание'
+        all_tags: 'Теги'
+    errors:
+      messages:
+        blank: 'не может быть пустым'

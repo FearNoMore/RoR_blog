@@ -1,0 +1,17 @@
+ru:
+  common:
+    errors: 'При заполнении формы возникли ошибки'
+    back: 'Назад'
+  will_paginate:
+    previous_label: '&larr; Назад'
+    next_label: 'Вперед &rarr;'
+  posts:
+    new:
+      title: 'Новая статья'
+    form:
+      submit:
+        '%{action} статью'
+    edit:
+      title: 'Редактирование статьи'
+    index:
+      title: 'Список статей'
