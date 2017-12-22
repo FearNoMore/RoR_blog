@@ -3,6 +3,7 @@ class Post < ActiveRecord::Base
 
   has_many :taggings
   has_many :tags, through: :taggings
+  belongs_to :category
 
   validates :title, :decription, :body, presence: true
 
