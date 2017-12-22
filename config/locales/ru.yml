@@ -3,8 +3,8 @@ ru:
     errors: 'При заполнении формы возникли ошибки'
     back: 'Назад'
   will_paginate:
-    previous_label: '&larr; Назад'
-    next_label: 'Вперед &rarr;'
+    previous_label: '< Назад'
+    next_label: 'Вперед >'
   posts:
     new:
       title: 'Новая статья'
