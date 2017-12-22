@@ -11,6 +11,7 @@
   </section>
 
   <section class="post-description clearfix">
+    <%= image_tag post.image.url(:thumb), class: 'img-thumbnail thumb' if post.image? %>
     <%= post.decription %>
   </section>
 </article>
