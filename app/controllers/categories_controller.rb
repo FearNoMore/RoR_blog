@@ -11,7 +11,7 @@ class CategoriesController < ApplicationController
 
   def new
     @category = Category.new
-    # @categories = Category.all.order(:name)
+    @categories = Category.all.order(:name)
   end
 
   def create
@@ -19,21 +19,21 @@ class CategoriesController < ApplicationController
     if @category.save
       redirect_to categories_path, success: 'Категория успешно создана'
     else
-      # @categories = Category.all.order(:name)
+      @categories = Category.all.order(:name)
       flash[:danger] = 'Не удалось создать категорию'
       render :new
     end
   end
 
   def edit
-    # @categories = Category.where("id != #{@category.id}").order(:name)
+    @categories = Category.where("id != #{@category.id}").order(:name)
   end
 
   def update
     if @category.update_attributes(category_params)
       redirect_to categories_path, success: 'Категория успешно обновлена'
     else
-      # @categories = Category.where("id != #{@category.id}").order(:name)
+      @categories = Category.where("id != #{@category.id}").order(:name)
       flash[:danger] = 'Не удалось обновить категорию'
       render :edit
     end

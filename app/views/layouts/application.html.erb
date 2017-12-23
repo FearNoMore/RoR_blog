@@ -11,12 +11,14 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="<%= posts_path %>">Статьи <span class="sr-only">(current)</span></a>
+        <li class="nav-item <%= 'active' if current_page?(root_path) || current_page?(posts_path) %>">
+          <a class="nav-link" href="<%= root_path %>">Все статьи <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Контакты</a>
-        </li>
+         <% Category.order(:name).roots.each do |category| %>
+          <li class="nav-item <%= 'active' if current_page?(category_path(category)) %>">
+            <%= link_to category.name, category, class: 'nav-link' %>
+          </li>
+         <% end %>
       </ul>
     </div>
     <%= link_to 'Новая статья', new_post_path, class: 'btn btn-outline-primary pull-xs-right' %>
@@ -39,6 +41,7 @@
     <div class="col-md-3">
       <%= render 'shared/submenu' %>
       <div class="tag_cloud">
+        <h2>Теги</h2>
         <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
           <%= link_to tag.name, tag_path(tag.name), class: css_class %>
         <% end %>
