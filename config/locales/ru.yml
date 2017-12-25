@@ -6,16 +6,18 @@ ru:
     previous_label: '&larr; Назад'
     next_label: 'Вперед &rarr;'
   posts:
-    new:
-      title: 'Новая статья'
-    form:
-      submit:
-        '%{action} статью'
-    edit:
-      title: 'Редактирование статьи'
     index:
       title: 'Список статей'
-  categories:
+  admin:
+    posts:
+      new:
+        title: 'Новая статья'
+      form:
+        submit:
+          '%{action} статью'
+      edit:
+        title: 'Редактирование статьи'
+    categories:
       new:
         title: 'Новая категория'
       form:
