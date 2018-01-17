@@ -2,6 +2,10 @@ ru:
   common:
     errors: 'При заполнении формы возникли ошибки'
     back: 'Назад'
+    create: 'Создать'
+    edit: 'Редактировать'
+    new_post: 'Новая статья'
+    delete: 'Удалить'
   will_paginate:
     previous_label: '&larr; Назад'
     next_label: 'Вперед &rarr;'

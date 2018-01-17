@@ -8,6 +8,7 @@ ru:
         description: 'Аннотация'
         decription: 'Аннотация'
         body: 'Содержание'
+        category_id: 'Категория'
         all_tags: 'Теги'
       category:
         name: 'Название'
