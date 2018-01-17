@@ -1,3 +1,5 @@
+$tag_link_color: #e731ff
+
 .main
   padding-top: 1em
 
@@ -7,14 +9,25 @@
   input, textarea
     border-color: #d01612
 .submenu
-    ul.subnav
-      list-style: none
-      padding-left: 0
+  h2
+    text-align: center
+  ul.subnav
+    list-style: none
+    padding-left: 0
 
-    ul.nested_nav
-      padding-left: 1em
+  ul.nested_nav
+    padding-left: 1em
 .tag_cloud
-  margin-top: 4em
+  margin-top: 8em
+  a
+    color: $tag_link_color
+    font-weight: bold
+    &:hover
+      text-decoration: none
+      color: darken($tag_link_color, 20%)
+  h2
+    text-align: center
+
 select
   -webkit-appearance: none
   -moz-appearance: none

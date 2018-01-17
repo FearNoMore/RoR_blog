@@ -1,11 +1,27 @@
 article.post
   margin-bottom: 1em
   padding: 1em 0
-  border-bottom: 1px solid #add8E6
+  border-bottom: 1px solid rgba(31, 21, 21, 0.65)
+
   img
     max-width: 100%
   h1, h2
     margin-bottom: 0
+  h2
+    a, a:visited
+      color: #0a0a0a
+      -webkit-transition: top 1s ease-out 0.5s
+      -moz-transition: top 1s ease-out 0.5s
+      -o-transition: top 1s ease-out 0.5s
+      transition: top 1s ease-out 0.5s
+      &:hover
+        -webkit-transition: top 1s ease-out 0.5s
+        -moz-transition: top 1s ease-out 0.5s
+        -o-transition: top 1s ease-out 0.5s
+        transition: top 1s ease-out 0.5s
+        text-decoration: none
+        color: lighten(#0a0a0a, 40%)
+
   section.post-summary
     padding: .5em 0
   section.post-body

@@ -12,6 +12,9 @@ ru:
   posts:
     index:
       title: 'Список статей'
+      tags: 'Теги'
+      categories: 'Категории'
+      all_posts: 'Все статьи'
   admin:
     posts:
       new:

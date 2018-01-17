@@ -10,9 +10,9 @@
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="nav nav-tabs">
         <li class="nav-item <%= 'active' if current_page?(root_path) || current_page?(posts_path) %>">
-          <a class="nav-link" href="<%= root_path %>">Все статьи <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="<%= root_path %>"><%= t('posts.index.all_posts') %> <span class="sr-only">(current)</span></a>
         </li>
          <% Category.order(:name).roots.each do |category| %>
           <li class="nav-item <%= 'active' if current_page?(category_path(category)) %>">
@@ -35,10 +35,10 @@
         </li>
       <% end %>
       <li class="nav-item <%= "active" if I18n.locale === :ru %>">
-          <%= link_to "Rus", { locale: :ru }, class: "nav-link" %>
+          <%= link_to "RUS", { locale: :ru }, class: "nav-link" %>
       </li>
       <li class="nav-item <%= "active" if I18n.locale === :en %>">
-          <%= link_to "Eng", { locale: :en }, class: "nav-link" %>
+          <%= link_to "ENG", { locale: :en }, class: "nav-link" %>
       </li>
     </ul>
   </nav>
@@ -61,7 +61,7 @@
     <div class="col-md-3">
       <%= render 'shared/submenu' %>
       <div class="tag_cloud">
-        <h2>Теги</h2>
+        <h2><%= t('posts.index.tags') %></h2>
         <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
           <%= link_to tag.name, tag_path(tag.name), class: css_class %>
         <% end %>

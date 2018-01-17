@@ -12,6 +12,9 @@ en:
   posts:
     index:
       title: 'Posts'
+      tags: 'Tags'
+      categories: 'Categories'
+      all_posts: 'See all posts'
   admin:
     posts:
       new:
