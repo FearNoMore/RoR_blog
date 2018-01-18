@@ -5,6 +5,7 @@ en:
     create: 'Create'
     edit: 'Edit'
     new_post: 'New post'
+    new_category: 'New category'
     delete: 'Delete'
   will_paginate:
     previous_label: '&larr; Back'

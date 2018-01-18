@@ -5,6 +5,7 @@ ru:
     create: 'Создать'
     edit: 'Редактировать'
     new_post: 'Новая статья'
+    new_category: 'Новая категория'
     delete: 'Удалить'
   will_paginate:
     previous_label: '&larr; Назад'

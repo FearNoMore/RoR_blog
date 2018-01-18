@@ -35,10 +35,10 @@
         </li>
       <% end %>
       <li class="nav-item <%= "active" if I18n.locale === :ru %>">
-          <%= link_to "RUS", { locale: :ru }, class: "nav-link" %>
+          <%= link_to image_tag("Russia.png"), { locale: :ru }, class: "nav-link" %>
       </li>
       <li class="nav-item <%= "active" if I18n.locale === :en %>">
-          <%= link_to "ENG", { locale: :en }, class: "nav-link" %>
+          <%= link_to image_tag("United-States.png"), { locale: :en }, class: "nav-link" %>
       </li>
     </ul>
   </nav>

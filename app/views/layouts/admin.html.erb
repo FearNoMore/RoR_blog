@@ -35,10 +35,10 @@
         </li>
       <% end %>
       <li class="nav-item <%= "active" if I18n.locale === :ru %>">
-        <%= link_to "Rus", { locale: :ru }, class: "nav-link" %>
+        <%= link_to image_tag("Russia.png"), { locale: :ru }, class: "nav-link" %>
       </li>
       <li class="nav-item <%= "active" if I18n.locale === :en %>">
-        <%= link_to "Eng", { locale: :en }, class: "nav-link" %>
+        <%= link_to image_tag("United-States.png"), { locale: :en }, class: "nav-link" %>
       </li>
     </ul>
   </nav>
@@ -61,7 +61,7 @@
     <div class="col-md-3">
       <%= render 'shared/submenu' %>
       <div class="tag_cloud">
-        <h2>t('posts.index.tags')</h2>
+        <h2><%= t('posts.index.tags') %></h2>
         <% tag_cloud(Tag.counts, %w{tag1 tag2 tag3 tag4 tag5}) do |tag, css_class| %>
           <%= link_to tag.name, tag_path(tag.name), class: css_class %>
         <% end %>

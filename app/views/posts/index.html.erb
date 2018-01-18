@@ -1,6 +1,7 @@
 <h1><%= t('.title') %></h1>
 <% if user_signed_in? && current_user.admin? %>
-  <%= link_to t('common.new_post'), new_admin_post_path, class: "btn btn-outline-primary btn-sm" %>
+  <%= link_to t('common.new_post'), new_admin_post_path, class: "btn btn-outline-dark btn-sm" %>
+  <%= link_to t('common.new_category'), new_admin_category_path, class: "btn btn-outline-dark btn-sm" %>
 <% end %>
 <section id='posts'>
   <%= render @posts %>

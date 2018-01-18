@@ -21,7 +21,17 @@ article.post
         transition: top 1s ease-out 0.5s
         text-decoration: none
         color: lighten(#0a0a0a, 40%)
+  small
+    a
+      color: #0a0a0a
+      font-weight: bold
+      font-style: italic
+      &:hover
+        text-decoration: none
+        color: lighten(#0a0a0a, 40%)
 
+  section.post-description
+    margin-top: 1em
   section.post-summary
     padding: .5em 0
   section.post-body
@@ -32,6 +42,9 @@ article.post
   .thumb
     float: left
     margin-right: 1em
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+  section.footer-summary
+    margin-top: 1em
 
 .editor
   min-height: 300px
