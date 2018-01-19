@@ -35,3 +35,11 @@ ru:
         title: 'Редактирование категории'
       index:
         title: 'Список категорий'
+  users:
+    sign_in:
+      title: 'Войти'
+    sign_up:
+      title: 'Регистрация'
+    edit:
+      title: 'Редактирование профиля'
+      delete_account: 'Удалить профиль'

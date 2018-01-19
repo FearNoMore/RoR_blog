@@ -35,3 +35,11 @@ en:
         title: 'Edit category'
       index:
         title: 'Categories'
+  users:
+      sign_in:
+        title: 'Sign in'
+      sign_up:
+        title: 'Sign up'
+      edit:
+        title: 'Edit profile'
+        delete_account: 'Delete my account'

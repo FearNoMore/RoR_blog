@@ -13,6 +13,8 @@ ru:
       category:
         name: 'Название'
         parent_id: 'Родительская категория'
+      user:
+        log_in: 'Войти'
     errors:
       messages:
         blank: 'не может быть пустым'
