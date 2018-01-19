@@ -8,9 +8,9 @@
 </head>
 <body>
 <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg">
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="nav nav-tabs">
+      <ul class="navbar-nav">
         <li class="nav-item <%= 'active' if current_page?(root_path) || current_page?(posts_path) %>">
           <a class="nav-link" href="<%= root_path %>"><%= t('posts.index.all_posts') %> <span class="sr-only">(current)</span></a>
         </li>
