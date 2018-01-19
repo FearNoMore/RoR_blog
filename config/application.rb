@@ -25,5 +25,7 @@ module MyBlog
     config.time_zone = 'Moscow'
     config.i18n.available_locales = [:ru, :en]
     config.i18n.default_locale = :ru
+    config.enable_dependency_loading = true
+    config.autoload_paths << Rails.root.join('lib')
   end
 end
