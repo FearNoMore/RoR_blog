@@ -106,6 +106,7 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
+    pg (1.0.0)
     popper_js (1.12.5)
     public_suffix (3.0.1)
     rack (1.6.8)
@@ -203,6 +204,7 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   mini_magick
+  pg
   rails (= 4.2.10)
   rails-assets-tether
   sass-rails (~> 5.0)
