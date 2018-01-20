@@ -1,4 +1,4 @@
-$tag_link_color: #e731ff
+$tag_link_color: #1b0fa0
 body
   background: url("sitebg2.jpg") no-repeat
   -webkit-background-size: cover
@@ -28,6 +28,12 @@ body
 
   ul.nested_nav
     padding-left: 1em
+  a
+    font-weight: bold
+    color: #0a0a0a
+    &:hover
+      color: lighten(#0a0a0a,30%)
+
 .tag_cloud
   margin-top: 12em
   a
@@ -35,7 +41,7 @@ body
     font-weight: bold
     &:hover
       text-decoration: none
-      color: darken($tag_link_color, 20%)
+      color: lighten($tag_link_color, 20%)
   h2
     text-align: center
 
